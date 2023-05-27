@@ -1,4 +1,4 @@
-package ItGoHomwork.com;
+package ItGoHomwork.com.DatabazV2;
 
 import ItGoHomwork.com.Servise.DataBazeInitServiceV2;
 

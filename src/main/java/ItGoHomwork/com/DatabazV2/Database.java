@@ -1,4 +1,4 @@
-package ItGoHomwork.com;
+package ItGoHomwork.com.DatabazV2;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

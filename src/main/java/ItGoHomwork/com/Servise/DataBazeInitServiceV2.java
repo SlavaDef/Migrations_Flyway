@@ -1,6 +1,6 @@
 package ItGoHomwork.com.Servise;
 
-import ItGoHomwork.com.Database;
+import ItGoHomwork.com.DatabazV2.Database;
 import org.flywaydb.core.Flyway;
 
 import java.io.IOException;
