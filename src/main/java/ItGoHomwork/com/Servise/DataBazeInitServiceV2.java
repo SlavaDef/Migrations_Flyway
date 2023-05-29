@@ -7,11 +7,9 @@ import java.io.IOException;
 
 public class DataBazeInitServiceV2 {
 
-    public static final String DB_URL = "jdbc:h2:./test";
-
     public void initDB(Database database) throws IOException {
         Flyway flyway = Flyway.configure().
-                dataSource(DB_URL, null, null)
+                dataSource(database.getUrl(), null, null)
                 .load();
         flyway.migrate();
     }

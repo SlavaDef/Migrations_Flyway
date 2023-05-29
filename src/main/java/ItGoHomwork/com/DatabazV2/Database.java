@@ -2,7 +2,6 @@ package ItGoHomwork.com.DatabazV2;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.Statement;
 
 public class Database {
     private static final String url = "jdbc:h2:./test";
@@ -21,6 +20,10 @@ public class Database {
 
     }
 
+    public String getUrl() {
+        return url;
+    }
+
     public static Database getInstance() {
         return INSTANCE;
     }
@@ -29,14 +32,4 @@ public class Database {
         return connection;
     }
 
-    public int executeUpdate(String sql) { // метод для виконання запиту
-        try (Statement st = connection.createStatement()) {
-            return st.executeUpdate(sql);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-
-            return -1;
-        }
-    }
 }

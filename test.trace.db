@@ -80,3 +80,7 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Vyaches
 	at org.h2.mvstore.FileStore.open(FileStore.java:128)
 	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
 	... 17 more
+2023-05-30 01:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM client[*]:"
+Syntax error in SQL statement "SELECT * FROM client[*]:"; SQL statement:
+SELECT * FROM client: [42000-214]
